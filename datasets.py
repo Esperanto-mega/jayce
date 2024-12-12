@@ -25,9 +25,9 @@ class ba3motif(InMemoryDataset):
                          pre_transform,pre_filter)
         
         idx = self.processed_file_names.index('{}.pt'.format(mode))
-        self.paths = [r'./Data/BA3/processed/train.pt',
-                      r'./Data/BA3/processed/valid.pt',
-                      r'./Data/BA3/processed/test.pt']
+        self.paths = [root + r'/processed/train.pt',
+                      root + r'/processed/valid.pt',
+                      root + r'/processed/test.pt']
         self.data, self.slices = torch.load(self.paths[idx])
         
         '''

@@ -25,7 +25,7 @@ from torch_geometric.loader import DataLoader
 
 # from gnn.overload import overload
 from overload import overload
-from utils.seed import GlobalSeed
+# from utils.seed import GlobalSeed
 from datasets import ba3motif
 # from utils.train import TrainProxy
 # from utils.train import TestProxy
